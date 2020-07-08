@@ -108,7 +108,6 @@ experiments/siammask_base/board
 experiments/siammask_base/debug
 experiments/siammask_base/logs
 snapshot/
-data/
 test/
 result/
 board
