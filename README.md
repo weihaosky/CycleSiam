@@ -9,7 +9,7 @@ This is the official implementation code for CycleSiam. It is built based on [Si
 
 
 <div align="center">
-  <img src="" width="600px" />
+  <img src="http://weihao-yuan.com/wp-content/uploads/cycletrack.jpg" width="600px" />
 </div>
 
 ### Bibtex
@@ -54,18 +54,16 @@ export PYTHONPATH=$PWD:$PYTHONPATH
 
 ## Demo
 - [Setup](#environment-setup) your environment
-- Download the CycleSiam model
+- Download the [CycleSiam](https://hkustconnect-my.sharepoint.com/:u:/g/personal/wyuanaa_connect_ust_hk/EWdBDP-_IslEvoc78NfIMYMBHfXONVi3QvrHEx7mNd1Trw?e=CpbIJb) model
 ```shell
 cd $CycleSiam/experiments/siammask_sharp
-wget 
-wget 
 ```
 - Run `demo.py`
 
 ```shell
 cd $CycleSiam/experiments/siammask_sharp
 export PYTHONPATH=$PWD:$PYTHONPATH
-python ../../tools/demo.py --resume CycleSiam_plus.pth --config config_davis.json
+python ../../tools/demo.py --resume checkpoint_cyclesiam_plus.pth --config config_davis.json
 ```
 
 
@@ -76,7 +74,7 @@ python ../../tools/demo.py --resume CycleSiam_plus.pth --config config_davis.jso
 [COCO](http://cocodataset.org/#download), 
 [ImageNet-DET](http://image-net.org/challenges/LSVRC/2015/), 
 and [ImageNet-VID](http://image-net.org/challenges/LSVRC/2015/).
-- Preprocess each datasets according the [readme](data/coco/readme.md) files.
+- Preprocess each datasets according the [readme](data/ytb_vos/readme.md) files.
 
 ### Download the pre-trained model (174 MB)
 (This model was trained on the ImageNet-1k Dataset)
@@ -127,8 +125,8 @@ bash test_all.sh -m snapshot/checkpoint_e19.pth -d VOT2018 -n 8 -g "0 1 2 3" # 8
 ### Pretrained models
 | <sub> Model </sub> | <sub>VOT2016</br>EAO / A / R</sub> | <sub>VOT2018</br>EAO / A / R</sub>  | <sub>DAVIS2016</br>J / F</sub>  | <sub>DAVIS2017</br>J / F</sub>  | <sub> Speed </sub>
 |:-------------------------:|:-------------------------------:|:-------------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-| <sub> CycleSiam </sub> | <sub>0.371 / 0.603 / 0.294</sub> | <sub>0.294 / 0.562 / 0.389</sub>  | <sub>- / -</sub>  | <sub>- / -</sub>  | <sub> 59 </sub> |
-| <sub> CycleSiam+ </sub> | <sub>0.398 / 0.601 / 0.247</sub> | <sub>0.317 / 0.549 / 0.314</sub>  | <sub>64.9 / 62.0</sub>  | <sub>50.9 / 56.8</sub>  | <sub> 44 </sub>  |
+| <sub> [CycleSiam](https://hkustconnect-my.sharepoint.com/:u:/g/personal/wyuanaa_connect_ust_hk/ERV3XqfrNapOiFa7FE6eklgBmlPhPi0VtVEaeJkMLgjuCw?e=0HSdtQ) </sub> | <sub>0.371 / 0.603 / 0.294</sub> | <sub>0.294 / 0.562 / 0.389</sub>  | <sub>- / -</sub>  | <sub>- / -</sub>  | <sub> 59 </sub> |
+| <sub> [CycleSiam+](https://hkustconnect-my.sharepoint.com/:u:/g/personal/wyuanaa_connect_ust_hk/EWdBDP-_IslEvoc78NfIMYMBHfXONVi3QvrHEx7mNd1Trw?e=CpbIJb) </sub> | <sub>0.398 / 0.601 / 0.247</sub> | <sub>0.317 / 0.549 / 0.314</sub>  | <sub>64.9 / 62.0</sub>  | <sub>50.9 / 56.8</sub>  | <sub> 44 </sub>  |
 
 
 ## License
