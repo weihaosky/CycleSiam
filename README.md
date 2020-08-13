@@ -19,7 +19,7 @@ If you find this code useful, please consider citing:
 @inproceedings{yuan2020self,
   title={Self-supervised object tracking and segmentation with cycle-consistent siamese networks},
   author={Yuan, Weihao and Wang, Michael Yu and Chen, Qifeng},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle={Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   pages={},
   year={2020},
   organization={IEEE}
