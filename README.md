@@ -1,6 +1,6 @@
 # CycleSiam
 
-This is the official implementation code for CycleSiam. It is built based on [SiamMask](https://github.com/foolwood/SiamMask). For technical details, please refer to :
+This is the official implementation code for CycleSiam -- "Self-supervised Object Tracking and Segmentation with Cycle-consistent Siamese Networks". It is built based on [SiamMask](https://github.com/foolwood/SiamMask). For technical details, please refer to :
 
 **Self-supervised Object Tracking and Segmentation with Cycle-consistent Siamese Networks** <br />
 [Weihao Yuan](https://weihao-yuan.com), Michael Yu Wang, Qifeng Chen <br />
